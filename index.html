@@ -10,7 +10,7 @@
     <!-- Open Graph -->
     <meta property="og:title" content="Game Up Academy | Treinamento de Basquete">
     <meta property="og:description" content="Método, constância e comunidade para atletas que buscam a elite do basquete.">
-    <meta property="og:image" content="https://api.dicebear.com/7.x/initials/svg?seed=GU">
+    <meta property="og:image" content="https://i.postimg.cc/8zKmf6jg/Logo-branca-transparente-GAME-UP.png">
     <meta property="og:type" content="website">
 
     <!-- Tailwind CSS -->
@@ -42,27 +42,29 @@
         html { scroll-behavior: smooth; }
         .hero-gradient { background: linear-gradient(135deg, #264153 0%, #1a2a36 100%); }
         .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .logo-img { height: 64px; width: auto; object-fit: contain; }
+        .step-box { background: white; border: 1px solid #e5e7eb; border-radius: 1.5rem; transition: all 0.3s ease; }
+        .step-box:hover { border-color: #72A9C9; box-shadow: 0 10px 30px -10px rgba(38, 65, 83, 0.1); }
     </style>
 </head>
 <body class="bg-gray-50 text-brand-dark font-sans selection:bg-brand-light selection:text-white">
 
     <!-- Sticky Header -->
-    <header class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-gray-200">
+    <header class="fixed top-0 w-full bg-brand-dark/95 backdrop-blur-md z-50 border-b border-white/10">
         <div class="container mx-auto px-4 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center">
-                <div class="h-12 w-12 bg-brand-dark rounded-md flex items-center justify-center text-white font-display font-bold text-xl mr-2">GU</div>
-                <span class="font-display font-bold text-2xl tracking-tight hidden sm:block uppercase">Game Up <span class="text-brand-light">Academy</span></span>
+                <img src="https://i.postimg.cc/8zKmf6jg/Logo-branca-transparente-GAME-UP.png" alt="Game Up Academy" class="logo-img">
             </a>
             
-            <nav class="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-wide">
+            <nav class="hidden lg:flex space-x-8 font-semibold text-sm uppercase tracking-wide text-white">
                 <a href="#como-funciona" class="hover:text-brand-light transition">Como Funciona</a>
                 <a href="#modulos" class="hover:text-brand-light transition">Módulos</a>
                 <a href="#comunidade" class="hover:text-brand-light transition">Comunidade</a>
                 <a href="#treinadores" class="hover:text-brand-light transition">Treinadores</a>
             </nav>
 
-            <a href="https://pay.hotmart.com/L103280970C?checkoutMode=2" class="cta-link bg-brand-dark text-white px-6 py-3 rounded-full font-bold text-sm hover:bg-brand-accent transition shadow-lg uppercase">
-                Entrar na Game Up
+            <a href="https://pay.hotmart.com/L103280970C?checkoutMode=2" class="cta-link bg-brand-light text-white px-6 py-3 rounded-full font-bold text-sm hover:bg-white hover:text-brand-dark transition shadow-lg uppercase">
+                Acessar Game Up Academy
             </a>
         </div>
     </header>
@@ -72,10 +74,10 @@
         <div class="container mx-auto px-4 relative z-10">
             <div class="max-w-4xl mx-auto text-center">
                 <div class="inline-block bg-brand-light/20 text-brand-light px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
-                    A Academia Número 1 de Basquete
+                    A comunidade que da um Game Up no seu jogo
                 </div>
                 <h1 class="font-display text-5xl md:text-7xl font-bold mb-6 leading-tight uppercase">
-                    Treine com <span class="text-brand-light underline decoration-brand-light">Método</span>, mantenha a <span class="text-brand-light underline decoration-brand-light">Constância</span> e evolua em <span class="text-brand-light underline decoration-brand-light">Comunidade</span>.
+                    Treine com <span class="text-brand-light">Método</span>, mantenha a <span class="text-brand-light">Constância</span> e evolua em <span class="text-brand-light">Comunidade</span>.
                 </h1>
                 <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
                     Sua jornada para o próximo nível começa com treinos estruturados, desafios semanais e uma comunidade que não te deixa desistir.
@@ -90,18 +92,22 @@
                     </a>
                 </div>
 
-                <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 border-t border-white/10 pt-10">
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 border-t border-white/10 pt-10 text-xs sm:text-sm">
                     <div class="flex items-center justify-center space-x-3">
-                        <svg class="w-6 h-6 text-brand-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <span class="font-semibold">Criado por Ex-Pro Players</span>
+                        <svg class="w-6 h-6 text-brand-light shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span class="font-semibold">Criado por Atletas Profissionais</span>
                     </div>
                     <div class="flex items-center justify-center space-x-3">
-                        <svg class="w-6 h-6 text-brand-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <span class="font-semibold">6+ Módulos Especializados</span>
+                        <svg class="w-6 h-6 text-brand-light shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span class="font-semibold">5 módulos diferentes para você montar seus treinos</span>
                     </div>
                     <div class="flex items-center justify-center space-x-3">
-                        <svg class="w-6 h-6 text-brand-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <svg class="w-6 h-6 text-brand-light shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                         <span class="font-semibold">Comunidade Ativa</span>
+                    </div>
+                    <div class="flex items-center justify-center space-x-3">
+                        <svg class="w-6 h-6 text-brand-light shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span class="font-semibold">Aulas extras com Leitura de Jogo, Mentalidade, Preparação Física e muito mais!</span>
                     </div>
                 </div>
             </div>
@@ -114,27 +120,75 @@
 
     <!-- How It Works -->
     <section id="como-funciona" class="py-24 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="font-display text-4xl font-bold uppercase mb-4">Como a Game Up funciona</h2>
-                <p class="text-gray-500 max-w-xl mx-auto">Um sistema pensado para quem quer resultado real, sem enrolação.</p>
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="text-center mb-20">
+                <h2 class="font-display text-4xl font-bold uppercase mb-4 tracking-tight">Como a Game Up funciona</h2>
+                <div class="h-1 w-20 bg-brand-light mx-auto"></div>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-brand-dark text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">1</div>
-                    <h3 class="font-display text-xl font-bold uppercase mb-3">Entre na Plataforma</h3>
-                    <p class="text-gray-600">Acesso imediato aos módulos e à nossa comunidade exclusiva na Hotmart.</p>
+            <div class="space-y-8">
+                <!-- Step 1 -->
+                <div class="step-box p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-16">
+                    <div class="md:w-1/2 order-2 md:order-1">
+                        <div class="flex items-center gap-4 mb-4">
+                            <span class="bg-brand-dark text-white w-10 h-10 rounded-full flex items-center justify-center font-bold font-display">1</span>
+                            <h3 class="font-display text-3xl font-bold uppercase text-brand-dark">Entre na Plataforma</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed text-lg">Faça login clicando em “Acessar Game Up Academy”. Depois disso, é só fazer login e procurar seu treino. Você também pode baixar o app da Hotmart para treinar de onde estiver, no seu ritmo.</p>
+                    </div>
+                    <div class="md:w-1/2 order-1 md:order-2 flex justify-center">
+                        <div class="w-48 h-48 bg-gray-50 rounded-full flex items-center justify-center text-brand-light">
+                            <svg class="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path></svg>
+                        </div>
+                    </div>
                 </div>
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-brand-dark text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">2</div>
-                    <h3 class="font-display text-xl font-bold uppercase mb-3">Siga o Método</h3>
-                    <p class="text-gray-600">Cronogramas de treino focados em fundamentos e rotinas semanais objetivas.</p>
+
+                <!-- Step 2 -->
+                <div class="step-box p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-16">
+                    <div class="md:w-1/2 flex justify-center">
+                        <div class="w-48 h-48 bg-gray-50 rounded-full flex items-center justify-center text-brand-dark">
+                            <svg class="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="flex items-center gap-4 mb-4">
+                            <span class="bg-brand-dark text-white w-10 h-10 rounded-full flex items-center justify-center font-bold font-display">2</span>
+                            <h3 class="font-display text-3xl font-bold uppercase text-brand-dark">Siga o Método</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed text-lg">Aqui você não treina no improviso. Escolha um dos treinos já montados por nossos coaches ou pela própria comunidade! Se quiser, você também pode montar seu próprio treino com base no seu nível e objetivo.</p>
+                    </div>
                 </div>
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-brand-dark text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">3</div>
-                    <h3 class="font-display text-xl font-bold uppercase mb-3">Domine os Desafios</h3>
-                    <p class="text-gray-600">Participe dos desafios em grupo para manter a constância e ser cobrado pela comunidade.</p>
+
+                <!-- Step 3 -->
+                <div class="step-box p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-16">
+                    <div class="md:w-1/2 order-2 md:order-1">
+                        <div class="flex items-center gap-4 mb-4">
+                            <span class="bg-brand-dark text-white w-10 h-10 rounded-full flex items-center justify-center font-bold font-display">3</span>
+                            <h3 class="font-display text-3xl font-bold uppercase text-brand-dark">Domine os Desafios</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed text-lg">Evolução real vem de constância. Use os desafios semanais para manter ritmo, medir seu progresso e subir de nível. E quando rolar, participe das aulas ao vivo para ajustar detalhes e continuar evoluindo.</p>
+                    </div>
+                    <div class="md:w-1/2 order-1 md:order-2 flex justify-center">
+                        <div class="w-48 h-48 bg-gray-50 rounded-full flex items-center justify-center text-brand-dark">
+                            <svg class="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke-width="1.5"></circle><circle cx="12" cy="12" r="7" stroke-width="1.5"></circle><circle cx="12" cy="12" r="4" stroke-width="1.5"></circle><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 12l8-8m0 0l-3.5.5M20 4l-.5 3.5"></path></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="step-box p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-16">
+                    <div class="md:w-1/2 flex justify-center">
+                        <div class="w-48 h-48 bg-gray-50 rounded-full flex items-center justify-center text-brand-light">
+                            <svg class="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="flex items-center gap-4 mb-4">
+                            <span class="bg-brand-dark text-white w-10 h-10 rounded-full flex items-center justify-center font-bold font-display">4</span>
+                            <h3 class="font-display text-3xl font-bold uppercase text-brand-dark">Compartilhe e Fique por Dentro</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed text-lg">Treinar sozinho é difícil — por isso a comunidade é parte do treino. Compartilhe seus resultados, dúvidas e dificuldades com uma comunidade que respira basquete. Além disso, não perca uma novidade no mundo do basquete com notícias das grandes ligas.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -144,41 +198,54 @@
     <section id="modulos" class="py-24 bg-gray-100">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="font-display text-4xl font-bold uppercase mb-4">O que você vai dominar</h2>
-                <p class="text-gray-500">Treinamento completo dividido por pilares fundamentais.</p>
+                <h2 class="font-display text-4xl font-bold uppercase mb-4 text-brand-dark">O que você vai dominar</h2>
+                <p class="text-gray-500 italic">5 pilares essenciais para sua evolução</p>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Cards -->
+                <!-- Mobilidade -->
                 <div class="bg-white p-8 rounded-xl shadow-sm card-hover border-b-4 border-brand-light">
-                    <div class="text-brand-light mb-4"><svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3.005 3.005 0 013.75-2.906z"></path></svg></div>
+                    <div class="text-brand-light mb-4">
+                        <!-- Icon: Person Stretching -->
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-1 2-3V9l-2-1-2 1v3M14 20l-4-1-2-3V9l2-1 2 1v3M12 5a2 2 0 100-4 2 2 0 000 4z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8l4 2M12 8l-4 2"></path></svg>
+                    </div>
                     <h4 class="font-display text-xl font-bold uppercase mb-2">Mobilidade</h4>
                     <p class="text-gray-600 text-sm">Prepare seu corpo para o alto rendimento e evite lesões comuns.</p>
                 </div>
+                <!-- Handles -->
                 <div class="bg-white p-8 rounded-xl shadow-sm card-hover border-b-4 border-brand-dark">
-                    <div class="text-brand-dark mb-4"><svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg></div>
+                    <div class="text-brand-dark mb-4">
+                        <!-- Icon: Open Hand -->
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0V12m3-4.5V11a1.5 1.5 0 003 0v-1.5a1.5 1.5 0 113 0V14a6 6 0 01-6 6h-2a6 6 0 01-6-6v-2.5a1.5 1.5 0 113 0z"></path></svg>
+                    </div>
                     <h4 class="font-display text-xl font-bold uppercase mb-2">Handles</h4>
                     <p class="text-gray-600 text-sm">Controle de bola de elite. Drible com confiança sob pressão.</p>
                 </div>
+                <!-- Arremesso -->
                 <div class="bg-white p-8 rounded-xl shadow-sm card-hover border-b-4 border-brand-light">
-                    <div class="text-brand-light mb-4"><svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg></div>
+                    <div class="text-brand-light mb-4">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke-width="2"></circle><circle cx="12" cy="12" r="3" stroke-width="2"></circle><path stroke-width="2" d="M12 2v4M12 18v4M2 12h4M18 12h4"></path></svg>
+                    </div>
                     <h4 class="font-display text-xl font-bold uppercase mb-2">Arremesso</h4>
                     <p class="text-gray-600 text-sm">Mecânica perfeita e consistência de qualquer lugar da quadra.</p>
                 </div>
+                <!-- Finalizações -->
                 <div class="bg-white p-8 rounded-xl shadow-sm card-hover border-b-4 border-brand-dark">
-                    <div class="text-brand-dark mb-4"><svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24"><path d="M7 13h10v-2H7v2zm0 4h10v-2H7v2zm0-8h10V7H7v2zm12-5h-3c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z"/></svg></div>
+                    <div class="text-brand-dark mb-4">
+                        <!-- Icon: Basketball Hoop -->
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4h16v8H4V4zM4 12c0 4.418 3.582 8 8 8s8-3.582 8-8"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12v4m4-4v4m4-4v4m-8 4l2 2m4-2l-2 2"></path></svg>
+                    </div>
                     <h4 class="font-display text-xl font-bold uppercase mb-2">Finalizações</h4>
-                    <p class="text-gray-600 text-sm">Diferentes recursos para pontuar perto da cesta contra defesas altas.</p>
+                    <p class="text-gray-600 text-sm">Diferentes recursos para pontuar perto da cesta mesmo marcado.</p>
                 </div>
+                <!-- Bag de Moves -->
                 <div class="bg-white p-8 rounded-xl shadow-sm card-hover border-b-4 border-brand-light">
-                    <div class="text-brand-light mb-4"><svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></div>
-                    <h4 class="font-display text-xl font-bold uppercase mb-2">Footwork</h4>
-                    <p class="text-gray-600 text-sm">O segredo dos grandes jogadores: trabalho de pés para criar vantagem.</p>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-sm card-hover border-b-4 border-brand-dark">
-                    <div class="text-brand-dark mb-4"><svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div>
-                    <h4 class="font-display text-xl font-bold uppercase mb-2">Leitura de Jogo</h4>
-                    <p class="text-gray-600 text-sm">Mentalidade vencedora e inteligência tática dentro de quadra.</p>
+                    <div class="text-brand-light mb-4">
+                        <!-- Icon: Backpack -->
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 19V11a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H7a2 2 0 01-2-2zM9 9V7a3 3 0 116 0v2M12 13v4m-3-2h6"></path></svg>
+                    </div>
+                    <h4 class="font-display text-xl font-bold uppercase mb-2">Bag de Moves</h4>
+                    <p class="text-gray-600 text-sm">Aprenda os movimentos das grandes estrelas para adicionar no seu "bag" e dominar em quadra.</p>
                 </div>
             </div>
         </div>
@@ -193,11 +260,11 @@
                         O senso de <span class="text-brand-light">comunidade</span> é parte do treino.
                     </h2>
                     <div class="space-y-6 text-gray-300 text-lg">
-                        <p>Na Game Up, você não treina sozinho. Nossa comunidade na Hotmart é o lugar onde o progresso acontece.</p>
+                        <p>Na Game Up, você não treina sozinho. Nossa comunidade é o lugar onde o progresso acontece e ninguém fica de fora.</p>
                         <ul class="space-y-4">
                             <li class="flex items-start space-x-3">
                                 <span class="bg-brand-light text-brand-dark rounded-full p-1 mt-1"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg></span>
-                                <span><strong>Accountability:</strong> Alguém sempre vai te cobrar se você sumir.</span>
+                                <span><strong>Comunicação:</strong> Compartilhe, acompanhe e pergunte para algum coach ou para outros atletas.</span>
                             </li>
                             <li class="flex items-start space-x-3">
                                 <span class="bg-brand-light text-brand-dark rounded-full p-1 mt-1"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg></span>
@@ -205,7 +272,7 @@
                             </li>
                             <li class="flex items-start space-x-3">
                                 <span class="bg-brand-light text-brand-dark rounded-full p-1 mt-1"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg></span>
-                                <span><strong>Desafios:</strong> Ranking e competições internas semanais.</span>
+                                <span><strong>Desafios:</strong> Ranking e competições internas semanais. Destaque-se e seja visto!</span>
                             </li>
                         </ul>
                     </div>
@@ -216,7 +283,7 @@
                     </div>
                 </div>
                 <div class="md:w-1/2 relative">
-                    <img src="https://picsum.photos/seed/basketball/600/400" alt="Comunidade Game Up" class="rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition duration-500">
+                    <img src="https://i.postimg.cc/VsFJGc1T/grupo1.jpg" alt="Comunidade Game Up" class="rounded-2xl shadow-2xl transition duration-500 w-full h-auto object-cover">
                     <div class="absolute -bottom-6 -left-6 bg-brand-light p-6 rounded-xl shadow-xl hidden lg:block">
                         <p class="font-display font-bold text-brand-dark uppercase">Treino + Consistência</p>
                         <p class="text-xs text-brand-dark/80 uppercase">A fórmula do resultado</p>
@@ -232,113 +299,28 @@
             <h2 class="font-display text-4xl font-bold uppercase mb-16">Nossos Treinadores</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="group">
-                    <div class="mb-6 overflow-hidden rounded-xl bg-gray-200">
-                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Servelin" alt="Coach Servelin" class="w-full h-64 object-cover">
+                    <div class="mb-6 overflow-hidden rounded-xl bg-gray-200 aspect-[3/4]">
+                        <img src="https://i.postimg.cc/TPXGvpcM/Rafael1.jpg" alt="Coach Servelin" class="w-full h-full object-cover">
                     </div>
                     <h3 class="font-display text-2xl font-bold uppercase mb-2">Coach Servelin</h3>
                     <p class="text-gray-500 uppercase text-sm tracking-widest font-semibold mb-4 text-brand-accent">Fundador</p>
-                    <p class="text-gray-600 text-sm">Ex-atleta profissional com foco total em metodologia prática e consistência de jogo.</p>
+                    <p class="text-gray-600 text-sm">Fundador da Game Up, com foco total em metodologia prática, consistência de jogo e handles.</p>
                 </div>
                 <div class="group">
-                    <div class="mb-6 overflow-hidden rounded-xl bg-gray-200">
-                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Joao" alt="Coach João" class="w-full h-64 object-cover">
+                    <div class="mb-6 overflow-hidden rounded-xl bg-gray-200 aspect-[3/4]">
+                        <img src="https://i.postimg.cc/5tw4XwtW/Joao1.jpg" alt="Coach João" class="w-full h-full object-cover">
                     </div>
                     <h3 class="font-display text-2xl font-bold uppercase mb-2">Coach João</h3>
                     <p class="text-gray-500 uppercase text-sm tracking-widest font-semibold mb-4 text-brand-accent">Especialista em Fundamentos</p>
-                    <p class="text-gray-600 text-sm">Especialista em mecânica de arremesso e footwork, trazendo técnicas de alto nível.</p>
+                    <p class="text-gray-600 text-sm">Especialista em arremesso e finalizações, trazendo técnicas de alto nível.</p>
                 </div>
                 <div class="group">
-                    <div class="mb-6 overflow-hidden rounded-xl bg-gray-200">
-                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Kuster" alt="Coach Kuster" class="w-full h-64 object-cover">
+                    <div class="mb-6 overflow-hidden rounded-xl bg-gray-200 aspect-[3/4]">
+                        <img src="https://i.postimg.cc/2yJRc65d/Vitor1.jpg" alt="Kuster" class="w-full h-full object-cover">
                     </div>
-                    <h3 class="font-display text-2xl font-bold uppercase mb-2">Coach Kuster</h3>
-                    <p class="text-gray-500 uppercase text-sm tracking-widest font-semibold mb-4 text-brand-accent">Performance & Mentalidade</p>
-                    <p class="text-gray-600 text-sm">Focado no desenvolvimento da leitura de jogo e preparação mental para competições.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Progress / Results -->
-    <section class="py-20 bg-gray-50 border-y border-gray-200">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="font-display text-4xl font-bold uppercase mb-4">Evolução que dá pra medir</h2>
-            <p class="text-gray-500 mb-12 italic">Depoimentos em breve.</p>
-            
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div>
-                    <div class="text-4xl font-bold text-brand-dark mb-1 font-display">100%</div>
-                    <p class="text-xs uppercase font-bold text-gray-400">Online</p>
-                </div>
-                <div>
-                    <div class="text-4xl font-bold text-brand-dark mb-1 font-display">Semanal</div>
-                    <p class="text-xs uppercase font-bold text-gray-400">Novos Desafios</p>
-                </div>
-                <div>
-                    <div class="text-4xl font-bold text-brand-dark mb-1 font-display">Técnica</div>
-                    <p class="text-xs uppercase font-bold text-gray-400">Foco em Detalhes</p>
-                </div>
-                <div>
-                    <div class="text-4xl font-bold text-brand-dark mb-1 font-display">Decisão</div>
-                    <p class="text-xs uppercase font-bold text-gray-400">QI de Basquete</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final CTA / Plans -->
-    <section id="planos" class="py-24 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto bg-brand-dark rounded-3xl p-10 md:p-16 text-center text-white relative shadow-2xl overflow-hidden">
-                <div class="relative z-10">
-                    <h2 class="font-display text-4xl md:text-5xl font-bold uppercase mb-6">Pronto para elevar seu jogo?</h2>
-                    <p class="text-xl text-gray-300 mb-10">Escolha o plano que melhor se adapta aos seus objetivos na Hotmart.</p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="https://pay.hotmart.com/L103280970C?checkoutMode=2" class="cta-link bg-brand-light text-brand-dark px-12 py-5 rounded-lg font-extrabold text-xl hover:bg-white transition uppercase">
-                            Acessar planos na Hotmart
-                        </a>
-                        <a href="https://go.hotmart.com/L103280970C" target="_blank" class="border-2 border-white/30 text-white px-12 py-5 rounded-lg font-bold text-xl hover:bg-white/10 transition uppercase">
-                            Saiba mais
-                        </a>
-                    </div>
-                    <p class="mt-8 text-sm text-gray-400">Garantia de 7 dias. Risco zero para você.</p>
-                </div>
-                <!-- Abstract Design Background -->
-                <div class="absolute top-0 right-0 w-64 h-64 bg-brand-light/10 rounded-full -mr-32 -mt-32"></div>
-                <div class="absolute bottom-0 left-0 w-64 h-64 bg-brand-light/10 rounded-full -ml-32 -mb-32"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="py-24 bg-gray-50">
-        <div class="container mx-auto px-4 max-w-3xl">
-            <h2 class="font-display text-4xl font-bold uppercase mb-12 text-center">Dúvidas Frequentes</h2>
-            
-            <div class="space-y-4">
-                <div class="bg-white rounded-lg p-6 shadow-sm">
-                    <h4 class="font-bold text-lg mb-2">Como acesso após pagar?</h4>
-                    <p class="text-gray-600">O acesso é imediato! Assim que o pagamento for aprovado, você recebe um e-mail da Hotmart com todos os dados de login para a nossa plataforma.</p>
-                </div>
-                <div class="bg-white rounded-lg p-6 shadow-sm">
-                    <h4 class="font-bold text-lg mb-2">É assinatura? Posso cancelar?</h4>
-                    <p class="text-gray-600">Temos modelos de assinatura recorrente. Você pode gerenciar seu plano e cancelar a qualquer momento diretamente pela plataforma da Hotmart.</p>
-                </div>
-                <div class="bg-white rounded-lg p-6 shadow-sm">
-                    <h4 class="font-bold text-lg mb-2">Para quem é a Game Up?</h4>
-                    <p class="text-gray-600">Para atletas de 12 a 30 anos que já jogam e querem evoluir, desde iniciantes motivados até jogadores de clubes e times escolares.</p>
-                </div>
-                <div class="bg-white rounded-lg p-6 shadow-sm">
-                    <h4 class="font-bold text-lg mb-2">Quantas vezes por semana devo treinar?</h4>
-                    <p class="text-gray-600">Recomendamos de 3 a 5 sessões semanais seguindo nossos cronogramas, mas o método é flexível para se adaptar à sua rotina.</p>
-                </div>
-                <div class="bg-white rounded-lg p-6 shadow-sm">
-                    <h4 class="font-bold text-lg mb-2">Preciso de academia?</h4>
-                    <p class="text-gray-600">Não necessariamente. Focamos muito em fundamentos de quadra. Ter uma cesta e espaço para bater bola é o principal requisito.</p>
-                </div>
-                <div class="bg-white rounded-lg p-6 shadow-sm">
-                    <h4 class="font-bold text-lg mb-2">Funciona para quem treina sozinho?</h4>
-                    <p class="text-gray-600">Com certeza! O método foi desenhado para te dar autonomia, e a comunidade online supre a falta de parceiros de treino presenciais.</p>
+                    <h3 class="font-display text-2xl font-bold uppercase mb-2">Kuster</h3>
+                    <p class="text-gray-500 uppercase text-sm tracking-widest font-semibold mb-4 text-brand-accent">Performance e suporte</p>
+                    <p class="text-gray-600 text-sm">Focado na leitura de jogo e preparação mental. Administrador da plataforma digital.</p>
                 </div>
             </div>
         </div>
@@ -346,30 +328,29 @@
 
     <!-- Footer -->
     <footer class="bg-brand-dark text-white py-16 border-t border-white/10">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-4 text-center md:text-left">
             <div class="flex flex-col md:flex-row justify-between items-center mb-12">
                 <div class="flex items-center mb-8 md:mb-0">
-                    <div class="h-10 w-10 bg-brand-light rounded-md flex items-center justify-center text-brand-dark font-display font-bold text-lg mr-2">GU</div>
-                    <span class="font-display font-bold text-2xl tracking-tight uppercase">Game Up <span class="text-brand-light">Academy</span></span>
+                    <img src="https://i.postimg.cc/8zKmf6jg/Logo-branca-transparente-GAME-UP.png" alt="Game Up Academy" class="logo-img">
                 </div>
                 
-                <div class="flex space-x-6">
-                    <a href="https://www.instagram.com/gameup.academy" class="hover:text-brand-light transition" aria-label="Instagram">Instagram</a>
-                    <a href="https://www.tiktok.com/@gameup_academy" class="hover:text-brand-light transition" aria-label="TikTok">TikTok</a>
-                    <a href="https://youtube.com/@gameupacad?si=pcXITlL7TNN4WEw2" class="hover:text-brand-light transition" aria-label="YouTube">YouTube</a>
+                <div class="flex space-x-6 text-white/70">
+                    <a href="https://www.instagram.com/gameup.academy" target="_blank" class="hover:text-brand-light transition" aria-label="Instagram">Instagram</a>
+                    <a href="https://www.tiktok.com/@gameup_academy" target="_blank" class="hover:text-brand-light transition" aria-label="TikTok">TikTok</a>
+                    <a href="https://youtube.com/@gameupacad?si=pcXITlL7TNN4WEw2" target="_blank" class="hover:text-brand-light transition" aria-label="YouTube">YouTube</a>
                 </div>
             </div>
             
             <div class="text-center text-gray-400 text-sm max-w-2xl mx-auto border-t border-white/10 pt-8">
-                <p class="mb-4">&copy; 2024 Game Up Academy. Todos os direitos reservados.</p>
+                <p class="mb-4">&copy; 2025 Game Up Academy. Todos os direitos reservados.</p>
                 <p>Aviso legal: Os resultados podem variar de acordo com o esforço individual, dedicação e constância do aluno nos treinamentos propostos.</p>
             </div>
         </div>
     </footer>
 
     <!-- Mobile Sticky CTA -->
-    <div class="fixed bottom-0 left-0 w-full p-4 bg-white/80 backdrop-blur-md border-t border-gray-200 md:hidden z-50">
-        <a href="https://pay.hotmart.com/L103280970C?checkoutMode=2" class="cta-link block w-full bg-brand-dark text-white text-center py-4 rounded-xl font-bold uppercase shadow-lg">
+    <div class="fixed bottom-0 left-0 w-full p-4 bg-brand-dark/95 backdrop-blur-md border-t border-white/10 md:hidden z-50">
+        <a href="https://pay.hotmart.com/L103280970C?checkoutMode=2" class="cta-link block w-full bg-brand-light text-white text-center py-4 rounded-xl font-bold uppercase shadow-lg">
             Entrar agora
         </a>
     </div>
