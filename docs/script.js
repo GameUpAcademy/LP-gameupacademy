@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const urlParams = new URLSearchParams(window.location.search);
         const utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
         
-        // Find existing UTMs in the current URL
         const foundUtms = {};
         utmKeys.forEach(key => {
             if (urlParams.has(key)) {
@@ -13,10 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // If no UTMs found, nothing to do
         if (Object.keys(foundUtms).length === 0) return;
 
-        // Apply found UTMs to all links with the 'cta-link' class
         const ctaLinks = document.querySelectorAll('.cta-link');
         ctaLinks.forEach(link => {
             try {
@@ -44,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.preventDefault();
                 const target = document.querySelector(href);
                 if (target) {
-                    const offset = 80; // Header height
+                    const offset = 80;
                     const bodyRect = document.body.getBoundingClientRect().top;
                     const elementRect = target.getBoundingClientRect().top;
                     const elementPosition = elementRect - bodyRect;
@@ -59,7 +56,66 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
+    // Carousel Logic
+    const setupCarousel = () => {
+        const track = document.getElementById('carousel-track');
+        const slides = Array.from(track.children);
+        const nextBtn = document.getElementById('next-btn');
+        const prevBtn = document.getElementById('prev-btn');
+        const dotsNav = document.getElementById('carousel-dots');
+        
+        if (!track) return;
+        
+        let currentIndex = 0;
+        const slideCount = slides.length;
+
+        // Create Dots
+        slides.forEach((_, i) => {
+            const dot = document.createElement('button');
+            dot.className = `w-3 h-3 rounded-full transition ${i === 0 ? 'bg-brand-light' : 'bg-white/30'}`;
+            dot.addEventListener('click', () => updateCarousel(i));
+            dotsNav.appendChild(dot);
+        });
+
+        const dots = Array.from(dotsNav.children);
+
+        const updateCarousel = (index) => {
+            if (index < 0) index = slideCount - 1;
+            if (index >= slideCount) index = 0;
+            
+            currentIndex = index;
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+            
+            dots.forEach((dot, i) => {
+                dot.className = `w-3 h-3 rounded-full transition ${i === currentIndex ? 'bg-brand-light' : 'bg-white/30'}`;
+            });
+        };
+
+        nextBtn?.addEventListener('click', () => updateCarousel(currentIndex + 1));
+        prevBtn?.addEventListener('click', () => updateCarousel(currentIndex - 1));
+
+        // Auto play
+        let autoPlayInterval = setInterval(() => updateCarousel(currentIndex + 1), 5000);
+
+        // Pause auto play on hover
+        const container = document.getElementById('community-carousel');
+        container?.addEventListener('mouseenter', () => clearInterval(autoPlayInterval));
+        container?.addEventListener('mouseleave', () => {
+            autoPlayInterval = setInterval(() => updateCarousel(currentIndex + 1), 5000);
+        });
+
+        // Swipe support (simple)
+        let touchStartX = 0;
+        container?.addEventListener('touchstart', e => touchStartX = e.touches[0].clientX);
+        container?.addEventListener('touchend', e => {
+            const touchEndX = e.changedTouches[0].clientX;
+            if (touchStartX - touchEndX > 50) updateCarousel(currentIndex + 1);
+            if (touchStartX - touchEndX < -50) updateCarousel(currentIndex - 1);
+        });
+    };
+
     // Initialize
     propagateUTMs();
     setupSmoothScroll();
+    setupCarousel();
 });

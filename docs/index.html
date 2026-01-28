@@ -45,6 +45,12 @@
         .logo-img { height: 64px; width: auto; object-fit: contain; }
         .step-box { background: white; border: 1px solid #e5e7eb; border-radius: 1.5rem; transition: all 0.3s ease; }
         .step-box:hover { border-color: #72A9C9; box-shadow: 0 10px 30px -10px rgba(38, 65, 83, 0.1); }
+        
+        /* Carousel Custom Styles */
+        .carousel-container { position: relative; width: 100%; overflow: hidden; border-radius: 1.5rem; }
+        .carousel-track { display: flex; transition: transform 0.5s ease-in-out; }
+        .carousel-slide { min-width: 100%; aspect-ratio: 16 / 9; }
+        .carousel-slide img { width: 100%; height: 100%; object-fit: cover; }
     </style>
 </head>
 <body class="bg-gray-50 text-brand-dark font-sans selection:bg-brand-light selection:text-white">
@@ -206,8 +212,9 @@
                 <!-- Mobilidade -->
                 <div class="bg-white p-8 rounded-xl shadow-sm card-hover border-b-4 border-brand-light">
                     <div class="text-brand-light mb-4">
-                        <!-- Icon: Person Stretching -->
-                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-1 2-3V9l-2-1-2 1v3M14 20l-4-1-2-3V9l2-1 2 1v3M12 5a2 2 0 100-4 2 2 0 000 4z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8l4 2M12 8l-4 2"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+                        </svg>
                     </div>
                     <h4 class="font-display text-xl font-bold uppercase mb-2">Mobilidade</h4>
                     <p class="text-gray-600 text-sm">Prepare seu corpo para o alto rendimento e evite lesões comuns.</p>
@@ -215,8 +222,9 @@
                 <!-- Handles -->
                 <div class="bg-white p-8 rounded-xl shadow-sm card-hover border-b-4 border-brand-dark">
                     <div class="text-brand-dark mb-4">
-                        <!-- Icon: Open Hand -->
-                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0V12m3-4.5V11a1.5 1.5 0 003 0v-1.5a1.5 1.5 0 113 0V14a6 6 0 01-6 6h-2a6 6 0 01-6-6v-2.5a1.5 1.5 0 113 0z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+                        </svg>
                     </div>
                     <h4 class="font-display text-xl font-bold uppercase mb-2">Handles</h4>
                     <p class="text-gray-600 text-sm">Controle de bola de elite. Drible com confiança sob pressão.</p>
@@ -232,8 +240,9 @@
                 <!-- Finalizações -->
                 <div class="bg-white p-8 rounded-xl shadow-sm card-hover border-b-4 border-brand-dark">
                     <div class="text-brand-dark mb-4">
-                        <!-- Icon: Basketball Hoop -->
-                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4h16v8H4V4zM4 12c0 4.418 3.582 8 8 8s8-3.582 8-8"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12v4m4-4v4m4-4v4m-8 4l2 2m4-2l-2 2"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+                        </svg>
                     </div>
                     <h4 class="font-display text-xl font-bold uppercase mb-2">Finalizações</h4>
                     <p class="text-gray-600 text-sm">Diferentes recursos para pontuar perto da cesta mesmo marcado.</p>
@@ -241,8 +250,9 @@
                 <!-- Bag de Moves -->
                 <div class="bg-white p-8 rounded-xl shadow-sm card-hover border-b-4 border-brand-light">
                     <div class="text-brand-light mb-4">
-                        <!-- Icon: Backpack -->
-                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 19V11a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H7a2 2 0 01-2-2zM9 9V7a3 3 0 116 0v2M12 13v4m-3-2h6"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
+                        </svg>
                     </div>
                     <h4 class="font-display text-xl font-bold uppercase mb-2">Bag de Moves</h4>
                     <p class="text-gray-600 text-sm">Aprenda os movimentos das grandes estrelas para adicionar no seu "bag" e dominar em quadra.</p>
@@ -254,39 +264,77 @@
     <!-- Community Focus -->
     <section id="comunidade" class="py-24 bg-brand-dark text-white overflow-hidden relative">
         <div class="container mx-auto px-4">
-            <div class="flex flex-col md-flex-row items-center gap-16">
-                <div class="md:w-1/2">
+            <div class="max-w-5xl mx-auto">
+                <div class="mb-16 text-center md:text-left">
                     <h2 class="font-display text-4xl md:text-5xl font-bold uppercase mb-8 leading-tight">
                         O senso de <span class="text-brand-light">comunidade</span> é parte do treino.
                     </h2>
-                    <div class="space-y-6 text-gray-300 text-lg">
-                        <p>Na Game Up, você não treina sozinho. Nossa comunidade é o lugar onde o progresso acontece e ninguém fica de fora.</p>
-                        <ul class="space-y-4">
-                            <li class="flex items-start space-x-3">
-                                <span class="bg-brand-light text-brand-dark rounded-full p-1 mt-1"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg></span>
-                                <span><strong>Comunicação:</strong> Compartilhe, acompanhe e pergunte para algum coach ou para outros atletas.</span>
-                            </li>
-                            <li class="flex items-start space-x-3">
-                                <span class="bg-brand-light text-brand-dark rounded-full p-1 mt-1"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg></span>
-                                <span><strong>Motivação:</strong> Veja o progresso de outros atletas e inspire-se.</span>
-                            </li>
-                            <li class="flex items-start space-x-3">
-                                <span class="bg-brand-light text-brand-dark rounded-full p-1 mt-1"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg></span>
-                                <span><strong>Desafios:</strong> Ranking e competições internas semanais. Destaque-se e seja visto!</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="mt-10">
-                        <a href="https://pay.hotmart.com/L103280970C?checkoutMode=2" class="cta-link inline-block bg-white text-brand-dark px-8 py-4 rounded-lg font-bold text-lg hover:bg-brand-light transition uppercase">
-                            Entrar na Comunidade
-                        </a>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-300 text-lg">
+                        <div>
+                            <p class="mb-6">Na Game Up, você não treina sozinho. Nossa comunidade é o lugar onde o progresso acontece e ninguém fica de fora.</p>
+                            <ul class="space-y-4">
+                                <li class="flex items-start space-x-3">
+                                    <span class="bg-brand-light text-brand-dark rounded-full p-1 mt-1 shrink-0"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg></span>
+                                    <span><strong>Comunicação:</strong> Compartilhe, acompanhe e pergunte para algum coach ou para outros atletas.</span>
+                                </li>
+                                <li class="flex items-start space-x-3">
+                                    <span class="bg-brand-light text-brand-dark rounded-full p-1 mt-1 shrink-0"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg></span>
+                                    <span><strong>Motivação:</strong> Veja o progresso de outros atletas e inspire-se.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="space-y-4">
+                                <li class="flex items-start space-x-3">
+                                    <span class="bg-brand-light text-brand-dark rounded-full p-1 mt-1 shrink-0"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg></span>
+                                    <span><strong>Desafios:</strong> Ranking e competições internas semanais. Destaque-se e seja visto!</span>
+                                </li>
+                            </ul>
+                            <div class="mt-8">
+                                <a href="https://pay.hotmart.com/L103280970C?checkoutMode=2" class="cta-link inline-block bg-white text-brand-dark px-8 py-4 rounded-lg font-bold text-lg hover:bg-brand-light transition uppercase">
+                                    Entrar na Comunidade
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="md:w-1/2 relative">
-                    <img src="https://i.postimg.cc/VsFJGc1T/grupo1.jpg" alt="Comunidade Game Up" class="rounded-2xl shadow-2xl transition duration-500 w-full h-auto object-cover">
-                    <div class="absolute -bottom-6 -left-6 bg-brand-light p-6 rounded-xl shadow-xl hidden lg:block">
-                        <p class="font-display font-bold text-brand-dark uppercase">Treino + Consistência</p>
-                        <p class="text-xs text-brand-dark/80 uppercase">A fórmula do resultado</p>
+
+                <!-- Carousel Below Text -->
+                <div class="relative group mt-12" id="community-carousel">
+                    <div class="carousel-container shadow-2xl">
+                        <div class="carousel-track" id="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="https://i.postimg.cc/Tww9NgY1/Foto-Grupo-Demo.jpg" alt="Comunidade Game Up Demo">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://i.postimg.cc/rphbp8DS/Foto-Grupo-Handles.jpg" alt="Treino de Handles em Grupo">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://i.postimg.cc/VsFJGc1T/grupo1.jpg" alt="Atletas Game Up Academy">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://i.postimg.cc/26QZw5n1/Foto-Certificado.jpg" alt="Conquista e Certificado">
+                            </div>
+                        </div>
+                        
+                        <!-- Navigation Arrows -->
+                        <button class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-md hover:bg-white/40 text-white p-3 rounded-full transition opacity-0 group-hover:opacity-100 hidden md:block" id="prev-btn">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        </button>
+                        <button class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-md hover:bg-white/40 text-white p-3 rounded-full transition opacity-0 group-hover:opacity-100 hidden md:block" id="next-btn">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+
+                        <!-- Indicators -->
+                        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2" id="carousel-dots">
+                            <!-- Generated by JS -->
+                        </div>
+                    </div>
+                    
+                    <!-- Decorative Element -->
+                    <div class="absolute -bottom-6 -right-6 bg-brand-light p-6 rounded-xl shadow-xl hidden lg:block z-20">
+                        <p class="font-display font-bold text-brand-dark uppercase">A maior comunidade do Brasil</p>
+                        <p class="text-xs text-brand-dark/80 uppercase">A união faz o Game Up</p>
                     </div>
                 </div>
             </div>
