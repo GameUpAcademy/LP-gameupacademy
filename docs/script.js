@@ -94,14 +94,14 @@ document.addEventListener('DOMContentLoaded', () => {
         nextBtn?.addEventListener('click', () => updateCarousel(currentIndex + 1));
         prevBtn?.addEventListener('click', () => updateCarousel(currentIndex - 1));
 
-        // Auto play
-        let autoPlayInterval = setInterval(() => updateCarousel(currentIndex + 1), 5000);
+        // Auto play every 3 seconds
+        let autoPlayInterval = setInterval(() => updateCarousel(currentIndex + 1), 3000);
 
         // Pause auto play on hover
         const container = document.getElementById('community-carousel');
         container?.addEventListener('mouseenter', () => clearInterval(autoPlayInterval));
         container?.addEventListener('mouseleave', () => {
-            autoPlayInterval = setInterval(() => updateCarousel(currentIndex + 1), 5000);
+            autoPlayInterval = setInterval(() => updateCarousel(currentIndex + 1), 3000);
         });
 
         // Swipe support (simple)
