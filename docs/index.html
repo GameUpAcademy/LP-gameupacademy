@@ -8,7 +8,7 @@
     
     <!-- Open Graph -->
     <meta property="og:title" content="Game Up Academy | Treinamento de Basquete">
-    <meta property="og:description" content="Método, constância e comunidade para atletas que buscam a elite do basquete.">
+    <meta property="og:description" content="Método, constância e comunidade para atletas que busca a elite do basquete.">
     <meta property="og:image" content="https://i.postimg.cc/8zKmf6jg/Logo-branca-transparente-GAME-UP.png">
     <meta property="og:type" content="website">
 
@@ -83,6 +83,12 @@
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
         }
 
+        /* Mobile specific adjustment for width */
+        .hotmart-fb.cta-button-style.mobile-full {
+            width: 100% !important;
+            display: flex !important;
+        }
+
         /* Hero Variant - Light Blue */
         .btn-brand-light {
             background-color: #72A9C9 !important;
@@ -143,7 +149,7 @@
                     Treine com <span class="text-brand-light">Método</span>, mantenha a <span class="text-brand-light">Constância</span> e evolua em <span class="text-brand-light">Comunidade</span>.
                 </h1>
                 <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-                    Sua jornada para o próximo nível começa com treinos estruturados, desafios semanais e uma comunidade que não te deixa desistir.
+                    Sua jornada para o próximo nível começa with treinos estruturados, desafios semanais e uma comunidade que não te deixa desistir.
                 </p>
                 
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -183,7 +189,7 @@
 
     <!-- How It Works -->
     <section id="como-funciona" class="py-24 bg-white">
-        <div class="container mx-auto px-4 max-w-5xl">
+        <div class="container mx-auto px-4 max-w-5_5xl">
             <div class="text-center mb-20">
                 <h2 class="font-display text-4xl font-bold uppercase mb-4 tracking-tight">Como a Game Up funciona</h2>
                 <div class="h-1 w-20 bg-brand-light mx-auto"></div>
@@ -477,8 +483,8 @@
 
     <!-- Mobile Sticky CTA -->
     <div class="fixed bottom-0 left-0 w-full p-4 bg-brand-dark/95 backdrop-blur-md border-t border-white/10 md:hidden z-50">
-        <a onclick="return false;" href="https://pay.hotmart.com/L103280970C?checkoutMode=2" class="hotmart-fb hotmart__button-checkout block w-full bg-brand-light text-brand-dark text-center py-4 rounded-xl font-extrabold uppercase shadow-lg">
-            Entrar agora
+        <a onclick="return false;" href="https://pay.hotmart.com/L103280970C?checkoutMode=2" class="hotmart-fb hotmart__button-checkout cta-button-style mobile-full btn-brand-light">
+            Quero fazer parte!
         </a>
     </div>
 
