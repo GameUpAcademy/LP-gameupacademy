@@ -8,7 +8,7 @@
     
     <!-- Open Graph -->
     <meta property="og:title" content="Game Up Academy | Treinamento de Basquete">
-    <meta property="og:description" content="Método, constância e comunidade para atletas que busca a elite do basquete.">
+    <meta property="og:description" content="Método, constância e comunidade para atletas que buscam a elite do basquete.">
     <meta property="og:image" content="https://i.postimg.cc/8zKmf6jg/Logo-branca-transparente-GAME-UP.png">
     <meta property="og:type" content="website">
 
@@ -60,10 +60,7 @@
         .step-box { background: white; border: 1px solid #e5e7eb; border-radius: 1.5rem; transition: all 0.3s ease; }
         .step-box:hover { border-color: #72A9C9; box-shadow: 0 10px 30px -10px rgba(38, 65, 83, 0.1); }
         
-        /* 
-           Hotmart Styling Overrides 
-           Force the brand visual standard provided in the user image
-        */
+        /* Hotmart Styling Overrides */
         .hotmart-fb.cta-button-style { 
             background-image: none !important; 
             border: none !important; 
@@ -72,9 +69,9 @@
             align-items: center !important;
             justify-content: center !important;
             width: auto !important;
-            border-radius: 0.5rem !important; /* rounded-lg */
-            font-weight: 800 !important; /* font-extrabold */
-            font-size: 1.125rem !important; /* text-lg */
+            border-radius: 0.5rem !important;
+            font-weight: 800 !important;
+            font-size: 1.125rem !important;
             text-transform: uppercase !important;
             text-decoration: none !important;
             transition: all 0.3s ease !important;
@@ -83,13 +80,13 @@
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
         }
 
-        /* Mobile specific adjustment for width */
+        .hotmart-fb img { display: none !important; }
+
         .hotmart-fb.cta-button-style.mobile-full {
             width: 100% !important;
             display: flex !important;
         }
 
-        /* Hero Variant - Light Blue */
         .btn-brand-light {
             background-color: #72A9C9 !important;
             color: #264153 !important;
@@ -99,7 +96,6 @@
             color: #264153 !important;
         }
 
-        /* Community Variant - White */
         .btn-brand-white {
             background-color: #ffffff !important;
             color: #264153 !important;
@@ -129,6 +125,7 @@
                 <a href="#como-funciona" class="hover:text-brand-light transition">Como Funciona</a>
                 <a href="#modulos" class="hover:text-brand-light transition">Módulos</a>
                 <a href="#comunidade" class="hover:text-brand-light transition">Comunidade</a>
+                <a href="#planos" class="hover:text-brand-light transition">Planos</a>
                 <a href="#treinadores" class="hover:text-brand-light transition">Treinadores</a>
             </nav>
 
@@ -149,14 +146,14 @@
                     Treine com <span class="text-brand-light">Método</span>, mantenha a <span class="text-brand-light">Constância</span> e evolua em <span class="text-brand-light">Comunidade</span>.
                 </h1>
                 <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-                    Sua jornada para o próximo nível começa with treinos estruturados, desafios semanais e uma comunidade que não te deixa desistir.
+                    Sua jornada para o próximo nível começa com treinos estruturados, desafios semanais e uma comunidade que não te deixa desistir.
                 </p>
                 
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a onclick="return false;" href="https://pay.hotmart.com/L103280970C?checkoutMode=2" class="hotmart-fb hotmart__button-checkout cta-button-style btn-brand-light w-full sm:w-auto">
+                    <a href="#planos" class="bg-brand-light text-brand-dark px-10 py-5 rounded-lg font-extrabold text-lg hover:bg-white transition uppercase shadow-2xl w-full sm:w-auto text-center">
                         Quero entrar agora
                     </a>
-                    <a href="#como-funciona" class="w-full sm:w-auto border-2 border-white/30 text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-white/10 transition uppercase">
+                    <a href="#como-funciona" class="w-full sm:w-auto border-2 border-white/30 text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-white/10 transition uppercase text-center">
                         Ver como funciona
                     </a>
                 </div>
@@ -164,24 +161,23 @@
                 <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 border-t border-white/10 pt-10 text-xs sm:text-sm">
                     <div class="flex items-center justify-center space-x-3">
                         <svg class="w-6 h-6 text-brand-light shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <span class="font-semibold">Criado por Atletas Profissionais</span>
+                        <span class="font-semibold text-center">Criado por Atletas Profissionais</span>
                     </div>
                     <div class="flex items-center justify-center space-x-3">
                         <svg class="w-6 h-6 text-brand-light shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <span class="font-semibold">5 módulos diferentes para você montar seus treinos</span>
+                        <span class="font-semibold text-center">5 módulos diferentes para você montar seus treinos</span>
                     </div>
                     <div class="flex items-center justify-center space-x-3">
                         <svg class="w-6 h-6 text-brand-light shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <span class="font-semibold">Comunidade Ativa</span>
+                        <span class="font-semibold text-center">Comunidade Ativa</span>
                     </div>
                     <div class="flex items-center justify-center space-x-3">
                         <svg class="w-6 h-6 text-brand-light shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <span class="font-semibold">Aulas extras com Leitura de Jogo, Mentalidade, Preparação Física e muito mais!</span>
+                        <span class="font-semibold text-center">Extras: Leitura de Jogo, Preparação Física, Conversa com os Pros e muito mais!</span>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Decorative Ball Element -->
         <div class="absolute -bottom-20 -right-20 opacity-10 pointer-events-none">
             <svg width="600" height="600" viewBox="0 0 100 100" fill="white"><circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="0.5" fill="none"/><path d="M50 5 A45 45 0 0 1 50 95 M5 50 A45 45 0 0 0 95 50 M15 15 Q50 50 85 85 M85 15 Q50 50 15 85" stroke="currentColor" stroke-width="0.5" fill="none"/></svg>
         </div>
@@ -189,7 +185,7 @@
 
     <!-- How It Works -->
     <section id="como-funciona" class="py-24 bg-white">
-        <div class="container mx-auto px-4 max-w-5_5xl">
+        <div class="container mx-auto px-4 max-w-5xl">
             <div class="text-center mb-20">
                 <h2 class="font-display text-4xl font-bold uppercase mb-4 tracking-tight">Como a Game Up funciona</h2>
                 <div class="h-1 w-20 bg-brand-light mx-auto"></div>
@@ -198,12 +194,12 @@
             <div class="space-y-8">
                 <!-- Step 1 -->
                 <div class="step-box p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-16">
-                    <div class="md:w-1/2 order-2 md:order-1">
-                        <div class="flex items-center gap-4 mb-4">
+                    <div class="md:w-1/2 order-2 md:order-1 text-center md:text-left">
+                        <div class="flex items-center justify-center md:justify-start gap-4 mb-4">
                             <span class="bg-brand-dark text-white w-10 h-10 rounded-full flex items-center justify-center font-bold font-display">1</span>
                             <h3 class="font-display text-3xl font-bold uppercase text-brand-dark">Entre na Plataforma</h3>
                         </div>
-                        <p class="text-gray-600 leading-relaxed text-lg">Faça login clicando em “Acessar Game Up Academy”. Depois disso, é só fazer login e procurar seu treino. Você também pode baixar o app da Hotmart para treinar de onde estiver, no seu ritmo.</p>
+                        <p class="text-gray-600 leading-relaxed text-lg">Acesse a área de membros clicando em “Acessar Game Up Academy”. Depois disso, é só fazer login e procurar seu treino. Você também pode baixar o app da Hotmart para treinar de onde estiver, no seu ritmo, online ou offline.</p>
                     </div>
                     <div class="md:w-1/2 order-1 md:order-2 flex justify-center">
                         <div class="w-48 h-48 bg-gray-50 rounded-full flex items-center justify-center text-brand-light">
@@ -219,8 +215,8 @@
                             <svg class="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
                         </div>
                     </div>
-                    <div class="md:w-1/2">
-                        <div class="flex items-center gap-4 mb-4">
+                    <div class="md:w-1/2 text-center md:text-left">
+                        <div class="flex items-center justify-center md:justify-start gap-4 mb-4">
                             <span class="bg-brand-dark text-white w-10 h-10 rounded-full flex items-center justify-center font-bold font-display">2</span>
                             <h3 class="font-display text-3xl font-bold uppercase text-brand-dark">Siga o Método</h3>
                         </div>
@@ -230,8 +226,8 @@
 
                 <!-- Step 3 -->
                 <div class="step-box p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-16">
-                    <div class="md:w-1/2 order-2 md:order-1">
-                        <div class="flex items-center gap-4 mb-4">
+                    <div class="md:w-1/2 order-2 md:order-1 text-center md:text-left">
+                        <div class="flex items-center justify-center md:justify-start gap-4 mb-4">
                             <span class="bg-brand-dark text-white w-10 h-10 rounded-full flex items-center justify-center font-bold font-display">3</span>
                             <h3 class="font-display text-3xl font-bold uppercase text-brand-dark">Domine os Desafios</h3>
                         </div>
@@ -251,8 +247,8 @@
                             <svg class="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path></svg>
                         </div>
                     </div>
-                    <div class="md:w-1/2">
-                        <div class="flex items-center gap-4 mb-4">
+                    <div class="md:w-1/2 text-center md:text-left">
+                        <div class="flex items-center justify-center md:justify-start gap-4 mb-4">
                             <span class="bg-brand-dark text-white w-10 h-10 rounded-full flex items-center justify-center font-bold font-display">4</span>
                             <h3 class="font-display text-3xl font-bold uppercase text-brand-dark">Compartilhe e Fique por Dentro</h3>
                         </div>
@@ -272,7 +268,6 @@
             </div>
 
             <div class="flex flex-wrap justify-center gap-6 max-w-6xl mx-auto">
-                <!-- Mobilidade -->
                 <div class="bg-white p-8 rounded-xl shadow-sm card-hover border-b-4 border-brand-light w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)]">
                     <div class="text-brand-light mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
@@ -282,7 +277,6 @@
                     <h4 class="font-display text-xl font-bold uppercase mb-2">Mobilidade</h4>
                     <p class="text-gray-600 text-sm">Prepare seu corpo para o alto rendimento e evite lesões comuns.</p>
                 </div>
-                <!-- Handles -->
                 <div class="bg-white p-8 rounded-xl shadow-sm card-hover border-b-4 border-brand-dark w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)]">
                     <div class="text-brand-dark mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
@@ -292,7 +286,6 @@
                     <h4 class="font-display text-xl font-bold uppercase mb-2">Handles</h4>
                     <p class="text-gray-600 text-sm">Controle de bola de elite. Drible com confiança sob pressão.</p>
                 </div>
-                <!-- Arremesso -->
                 <div class="bg-white p-8 rounded-xl shadow-sm card-hover border-b-4 border-brand-light w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)]">
                     <div class="text-brand-light mb-4">
                         <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke-width="2"></circle><circle cx="12" cy="12" r="3" stroke-width="2"></circle><path stroke-width="2" d="M12 2v4M12 18v4M2 12h4M18 12h4"></path></svg>
@@ -300,7 +293,6 @@
                     <h4 class="font-display text-xl font-bold uppercase mb-2">Arremesso</h4>
                     <p class="text-gray-600 text-sm">Mecânica perfeita e consistência de qualquer lugar da quadra.</p>
                 </div>
-                <!-- Finalizações -->
                 <div class="bg-white p-8 rounded-xl shadow-sm card-hover border-b-4 border-brand-dark w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)]">
                     <div class="text-brand-dark mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
@@ -310,7 +302,6 @@
                     <h4 class="font-display text-xl font-bold uppercase mb-2">Finalizações</h4>
                     <p class="text-gray-600 text-sm">Diferentes recursos para pontuar perto da cesta mesmo marcado.</p>
                 </div>
-                <!-- Bag de Moves -->
                 <div class="bg-white p-8 rounded-xl shadow-sm card-hover border-b-4 border-brand-light w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)]">
                     <div class="text-brand-light mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
@@ -334,19 +325,17 @@
                     </h2>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-gray-300 text-lg">
-                        <!-- Left Column: Text and Button -->
-                        <div class="flex flex-col">
-                            <p class="mb-10 text-xl leading-relaxed text-center md:text-left">
+                        <div class="flex flex-col text-center md:text-left">
+                            <p class="mb-10 text-xl leading-relaxed">
                                 Na Game Up, você não treina sozinho. Nossa comunidade é o lugar onde o progresso acontece e ninguém fica de fora.
                             </p>
                             <div class="flex justify-center md:justify-start">
-                                <a onclick="return false;" href="https://pay.hotmart.com/L103280970C?checkoutMode=2" class="hotmart-fb hotmart__button-checkout cta-button-style btn-brand-white">
+                                <a href="#planos" class="bg-white text-brand-dark px-10 py-5 rounded-lg font-extrabold text-lg hover:bg-brand-light hover:text-white transition uppercase shadow-xl">
                                     Entrar na Comunidade
                                 </a>
                             </div>
                         </div>
 
-                        <!-- Right Column: Features List -->
                         <div class="space-y-6">
                             <ul class="space-y-6">
                                 <li class="flex items-start space-x-4 p-4 bg-white/5 rounded-xl border border-white/10">
@@ -381,45 +370,93 @@
                     </div>
                 </div>
 
-                <!-- Carousel Below Text -->
+                <!-- Carousel -->
                 <div class="relative group mt-12" id="community-carousel">
                     <div class="carousel-container shadow-2xl">
                         <div class="carousel-track" id="carousel-track">
-                            <div class="carousel-slide">
-                                <img src="https://i.postimg.cc/K8Nbbhxb/Foto-Grupo-Up.jpg" alt="Foto Grupo Up">
-                            </div>
-                            <div class="carousel-slide">
-                                <img src="https://i.postimg.cc/VsFJGc1T/grupo1.jpg" alt="Atletas Game Up Academy">
-                            </div>
-                            <div class="carousel-slide">
-                                <img src="https://i.postimg.cc/Tww9NgY1/Foto-Grupo-Demo.jpg" alt="Comunidade Game Up Demo">
-                            </div>
-                            <div class="carousel-slide">
-                                <img src="https://i.postimg.cc/rphbp8DS/Foto-Grupo-Handles.jpg" alt="Treino de Handles em Grupo">
-                            </div>
-                            <div class="carousel-slide">
-                                <img src="https://i.postimg.cc/26QZw5n1/Foto-Certificado.jpg" alt="Conquista e Certificado">
-                            </div>
+                            <div class="carousel-slide"><img src="https://i.postimg.cc/K8Nbbhxb/Foto-Grupo-Up.jpg" alt="Foto Grupo Up"></div>
+                            <div class="carousel-slide"><img src="https://i.postimg.cc/VsFJGc1T/grupo1.jpg" alt="Atletas Game Up Academy"></div>
+                            <div class="carousel-slide"><img src="https://i.postimg.cc/Tww9NgY1/Foto-Grupo-Demo.jpg" alt="Comunidade Game Up Demo"></div>
+                            <div class="carousel-slide"><img src="https://i.postimg.cc/rphbp8DS/Foto-Grupo-Handles.jpg" alt="Treino de Handles em Grupo"></div>
+                            <div class="carousel-slide"><img src="https://i.postimg.cc/26QZw5n1/Foto-Certificado.jpg" alt="Conquista e Certificado"></div>
                         </div>
-                        
-                        <!-- Navigation Arrows -->
                         <button class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-md hover:bg-white/40 text-white p-3 rounded-full transition opacity-0 group-hover:opacity-100 hidden md:block" id="prev-btn">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
                         </button>
                         <button class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-md hover:bg-white/40 text-white p-3 rounded-full transition opacity-0 group-hover:opacity-100 hidden md:block" id="next-btn">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                         </button>
-
-                        <!-- Indicators -->
-                        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2" id="carousel-dots">
-                            <!-- Generated by JS -->
-                        </div>
+                        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2" id="carousel-dots"></div>
                     </div>
-                    
-                    <!-- Decorative Element -->
                     <div class="absolute -bottom-6 -right-6 bg-brand-light p-6 rounded-xl shadow-xl hidden lg:block z-20">
                         <p class="font-display font-bold text-brand-dark uppercase">A comunidade de quem quer crescer</p>
                         <p class="text-xs text-brand-dark/80 uppercase">A união faz o Game Up</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="planos" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl md:text-5xl font-bold uppercase mb-4 text-brand-dark">Escolha seu Plano de Elite</h2>
+                <p class="text-gray-600 max-w-xl mx-auto italic text-lg text-center">Treine com os melhores, de qualquer lugar, com o plano que mais se adapta ao seu bolso.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-center">
+                <!-- Monthly Plan -->
+                <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm flex flex-col items-center card-hover">
+                    <h3 class="font-display text-2xl font-bold uppercase mb-4">Mensal</h3>
+                    <div class="flex items-baseline mb-6">
+                        <span class="text-2xl font-bold text-brand-dark">R$</span>
+                        <span class="text-5xl font-extrabold text-brand-dark">39,90</span>
+                        <span class="text-gray-500 ml-2">/mês</span>
+                    </div>
+                    <a onclick="return false;" href="https://pay.hotmart.com/L103280970C?checkoutMode=2&off=4i8prjgj" class="hotmart-fb hotmart__button-checkout cta-button-style bg-brand-light text-brand-dark hover:bg-white transition w-full text-center py-4 rounded-xl font-bold uppercase">Assinar Mensal</a>
+                </div>
+
+                <!-- Annual Plan (Best Value) -->
+                <div class="bg-brand-dark p-8 rounded-3xl border-4 border-brand-light shadow-2xl flex flex-col items-center scale-105 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-brand-light text-brand-dark px-4 py-1 font-bold text-xs uppercase rounded-bl-xl tracking-tighter">MELHOR ESCOLHA</div>
+                    <h3 class="font-display text-2xl font-bold uppercase mb-4 text-white">Anual</h3>
+                    <div class="text-center mb-6">
+                        <p class="text-brand-light/70 line-through text-sm font-bold">R$ 478,80 (Valor Mensal)</p>
+                        <div class="flex items-baseline justify-center">
+                            <span class="text-2xl font-bold text-white">R$</span>
+                            <span class="text-6xl font-extrabold text-white">359,10</span>
+                        </div>
+                        <p class="text-brand-light font-extrabold mt-1 uppercase text-sm text-center">3 Meses de Graça!</p>
+                        <p class="bg-white/10 inline-block px-3 py-1 rounded mt-3 text-xs text-white/80 font-bold uppercase tracking-widest text-center">Apenas R$ 0,98 por dia</p>
+                    </div>
+                    <a onclick="return false;" href="https://pay.hotmart.com/L103280970C?checkoutMode=2&off=x5h7m4rd" class="hotmart-fb hotmart__button-checkout cta-button-style bg-brand-light text-brand-dark hover:bg-white transition w-full text-center py-5 rounded-xl font-black text-xl shadow-xl uppercase">Garantir Plano Anual</a>
+                </div>
+
+                <!-- Semestral Plan -->
+                <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm flex flex-col items-center card-hover">
+                    <h3 class="font-display text-2xl font-bold uppercase mb-4">Semestral</h3>
+                    <div class="text-center mb-6">
+                        <p class="text-gray-400 line-through text-xs font-bold">R$ 239,40 (Valor Mensal)</p>
+                        <div class="flex items-baseline justify-center">
+                            <span class="text-2xl font-bold text-brand-dark">R$</span>
+                            <span class="text-5xl font-extrabold text-brand-dark">199,50</span>
+                        </div>
+                        <p class="text-brand-accent font-bold mt-1 text-sm uppercase text-center">1 Mês de Graça!</p>
+                    </div>
+                    <a onclick="return false;" href="https://pay.hotmart.com/L103280970C?checkoutMode=2&off=vs9u0xb0" class="hotmart-fb hotmart__button-checkout cta-button-style bg-brand-light text-brand-dark hover:bg-white transition w-full text-center py-4 rounded-xl font-bold uppercase">Assinar Semestral</a>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <div class="inline-flex flex-col md:flex-row items-center justify-center gap-8 bg-white p-6 rounded-3xl border border-gray-100 shadow-sm">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-12 h-12 text-brand-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        <div class="text-left text-xs uppercase font-bold">7 Dias de Garantia</div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <svg class="w-12 h-12 text-brand-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+                        <div class="text-left text-xs uppercase font-bold">Checkout Seguro</div>
                     </div>
                 </div>
             </div>
@@ -437,7 +474,7 @@
                     </div>
                     <h3 class="font-display text-2xl font-bold uppercase mb-2">Coach Servelin</h3>
                     <p class="text-gray-500 uppercase text-sm tracking-widest font-semibold mb-4 text-brand-accent">Fundador</p>
-                    <p class="text-gray-600 text-sm">Fundador da Game Up, com foco total em metodologia prática, consistência de jogo e handles.</p>
+                    <p class="text-gray-600 text-sm text-center">Fundador da Game Up, com foco total em metodologia prática, consistência de jogo e handles.</p>
                 </div>
                 <div class="group">
                     <div class="mb-6 overflow-hidden rounded-xl bg-gray-200 aspect-[3/4]">
@@ -445,7 +482,7 @@
                     </div>
                     <h3 class="font-display text-2xl font-bold uppercase mb-2">Coach João</h3>
                     <p class="text-gray-500 uppercase text-sm tracking-widest font-semibold mb-4 text-brand-accent">Especialista em Fundamentos</p>
-                    <p class="text-gray-600 text-sm">Especialista em arremesso e finalizações, trazendo técnicas de alto nível.</p>
+                    <p class="text-gray-600 text-sm text-center">Especialista em arremesso e finalizações, trazendo técnicas de alto nível.</p>
                 </div>
                 <div class="group">
                     <div class="mb-6 overflow-hidden rounded-xl bg-gray-200 aspect-[3/4]">
@@ -453,7 +490,7 @@
                     </div>
                     <h3 class="font-display text-2xl font-bold uppercase mb-2">Kuster</h3>
                     <p class="text-gray-500 uppercase text-sm tracking-widest font-semibold mb-4 text-brand-accent">Performance e suporte</p>
-                    <p class="text-gray-600 text-sm">Focado na leitura de jogo e preparação mental. Administrador da plataforma digital.</p>
+                    <p class="text-gray-600 text-sm text-center">Focado na leitura de jogo e preparação mental. Administrador da plataforma digital.</p>
                 </div>
             </div>
         </div>
@@ -483,7 +520,7 @@
 
     <!-- Mobile Sticky CTA -->
     <div class="fixed bottom-0 left-0 w-full p-4 bg-brand-dark/95 backdrop-blur-md border-t border-white/10 md:hidden z-50">
-        <a onclick="return false;" href="https://pay.hotmart.com/L103280970C?checkoutMode=2" class="hotmart-fb hotmart__button-checkout cta-button-style mobile-full btn-brand-light">
+        <a href="#planos" class="block w-full bg-brand-light text-brand-dark text-center py-4 rounded-xl font-extrabold uppercase shadow-lg text-center">
             Quero fazer parte!
         </a>
     </div>
